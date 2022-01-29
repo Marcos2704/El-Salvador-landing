@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/cuenta.css">
+    <link rel="stylesheet" href="./assets/iComoon/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <main class="cuenta-container">
+        <div class="form">
+            <form id="form" class="form-data" action="./form-result.php" method="POST" target="Self_">
+                <h2>Inicia Sesion</h2>
+                <ul>
+                    <li><label for="email">Email: </label></li>
+                    <li class="form-data">
+                        <input type="email" name="email" placeholder="Email" id="email" >
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+                </ul>
+                <ul>
+                    <li><label for="pasword">Contraseña: </label></li>
+                    <li class="form-data">
+                        <input type="pasword" placeholder="Contraseña" id="password">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+                </ul>
+                <input type="submit" class="boton">
+
+                <div class="opcion-cuenta">
+                    <a href="crear.html">Crear Cuenta</a>
+                    <a href="olvido.html">¿Olvido su contraseña?</a>
+                    <a href="index.html">Volver al inicio</a>
+                </div>  
+            </form>
+        </div>
+
+    </main>
+   
+<script src="./assets/js/cuenta.js"></script>
+</body>
+</html>

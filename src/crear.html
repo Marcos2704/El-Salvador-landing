@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/crear.css">
+    <link rel="stylesheet" href="./assets/iComoon/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <main class="cuenta-container">
+        <div class="form">
+            <form id="form" action="./form-result.php" method="POST" target="Self_">
+                <h2>Crear Cuenta</h2>
+                <ul>
+                    <li class="form-data">
+                        <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+                    
+                  
+                    <li class="form-data">
+                        <input type="text" name="apellido" placeholder="Apellido" id="apellido">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+            
+                    <li class="genero">
+                        <label for="sexo">Introduce tu sexo</label><br>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="male">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="female">Mujer</label>
+                        <input type="radio" id="otro" name="sexo" value="otro">
+                        <label for="otro">Otro</label>
+                        <br><small>Error mensaje</small>
+                    </li>
+                    
+    
+                    <li class="form-data">
+                        <input type="email" name="email" placeholder="Email" id="email">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+
+                    <li class="form-data">
+                        <input type="password" name="contraseña" placeholder="Contraseña" id="password">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+
+                    <li class="form-data">
+                        <input type="password" name="vericontraseña" placeholder="Confirmar Contraseña" id="password2">
+                        <i class="icon-checkmark"></i>
+                        <i class="icon-cancel-circle"></i>
+                        <br><small>Error mensaje</small>
+                    </li>
+                   
+                    <li class="form-data">
+                        <span>Indique una frase de seguridad</span>
+                        <textarea name="palabraseguridad" id="frase" cols="25" rows="3" class="text"></textarea><br>
+                    </li>
+                    
+                </ul>
+    
+                <input type="submit" class="boton">
+                <div class="opcion-cuenta">
+                    <a href="cuenta.html">Inicar sesion</a>
+                    <a href="index.html">Volver al inicio</a>
+                </div>  
+            </form>
+        </div>
+        
+    </main>
+   
+    
+<script src="./assets/js/crear.js"></script>
+</body>
+</html>

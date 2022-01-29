@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/iComoon/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+    <link  href="./carrito.html">
+    <title>El Salvador</title>
+</head>
+<body>
+    <main class="container" id="inicio">
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+
+                <nav class="navbar">
+                        <div><a id="anav" class="a-nav" href="#inicio">Inicio</a></div>
+                        <div><a id="anav" class="a-nav" href="#historia">Historia</a></div>
+                        <div><a id="anav" class="a-nav" href="#catalogo">Catalogo</a></div>
+                        <div><a id="anav" class="a-nav" href="#contacto">Contacto</a></div>  
+
+                        <div class="login">
+                            <a class="buttom-sesion" href="cuenta.html">Inicia sesion</a>
+                        </div>
+                </nav>
+                <span class="buy-cart">
+                    <a class="buy-cart" href="#carrito" ><i class="icon-cart"></i></a>
+                    <span class="itemcart" id="totalItems"></span>
+                </span>
+
+                <span class="btn-nav">
+                    <i class="icon-menu"></i>
+                </span>
+            </div>
+
+
+            <div class="titulo">
+                <h1>El Salvador</h1>
+            </div>
+              
+        </header>
+
+        <section class="section-historia" id="historia">
+                <h2>Historia</h2>
+                <h3>Al servicio del cliente desde 1954</h3>
+                <div class="historia-contenido">
+                    
+                    <div class="historia-multimedia">
+                        <div class="historia-foto"><img src="./assets/img/historia.png" alt="historia"></div>
+                        <div class="historia-parrafo">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos impedit eum, modi dignissimos praesentium 
+                                odio obcaecati velit odit! Temporibus blanditiis alias porro accusantium, omnis 
+                                expedita exercitationem ipsam sunt 
+                                itaque maiores?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Exercitationem amet saepe, pariatur id unde at animi repellendus reiciendis aspernatur, 
+                                beatae ab natus 
+                                quos ipsam. Ratione rem necessitatibus alias assumenda culpa.
+                           </p>
+                        </div>
+                    </div>   
+                </div>       
+        </section>
+
+        <section class="section-catalogo" id="catalogo">
+            <h2>Catalogo</h2>
+           
+            <div class="catalogo-container">
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/vacio.png" alt="vacio">
+                        <div class="capa">
+                            <h3>Vacio</h3>
+                            <span>$750xkg</span>
+                            <button onclick= "{addProducto(`Vacio`,750,1)}"> Agregar al carrito</button>  
+                        </div>
+
+                    </div>
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/asado.png" alt="asado">
+                        <div class="capa">
+                            <h3>Asado</h3>
+                            <span>$680xkg</span>
+                            <button onclick= "{addProducto(`Asado`,680,1)}"> Agregar al carrito</button>    
+                        </div>  
+                    </div>
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/lomo.png" alt="lomo">
+                        <div class="capa">
+                            <h3>Lomo</h3>
+                            <span>$920xkg</span>
+                            <button onclick= "{addProducto(`Lomo`,920,1)}"> Agregar al carrito</button>   
+                        </div>  
+                    </div>
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/matambre.png" alt="matambre">
+                        <div class="capa">
+                            <h3>Matambre</h3>
+                            <span>$660xkg</span>
+                            <button onclick= "{addProducto(`Matambre`,660,1)}"> Agregar al carrito</button>    
+                        </div>  
+                    </div>
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/bife-ancho.png" alt="bife ancho">
+                        <div class="capa">
+                            <h3>Bife Ancho</h3>
+                            <span>$690xkg</span>
+                            <button onclick= "{addProducto(`Bife Ancho`,690,1)}"> Agregar al carrito</button>    
+                        </div>  
+                    </div>
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/bife-angosto.png" alt="bife-angosto">
+                        <div class="capa">
+                            <h3>Bife Angosto</h3>
+                            <span>$670xkg</span>
+                            <button onclick=" {addProducto(`Bife Angosto`,670,1)}"> Agregar al carrito</button>     
+                        </div> 
+                    </div>
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/entraña.png" alt="Entraña">
+                        <div class="capa">
+                            <h3>Entraña</h3>
+                            <span>$710xkg</span>
+                            <button onclick= "{addProducto(`Entraña`,710,1)}"> Agregar al carrito</button>     
+                        </div> 
+                    </div>
+
+                    <div class="image-box">
+                        <img src="./assets/img/catalogo/peceto.png" alt="pecet">
+                        <div class="capa">
+                            <h3>Peceto</h3>
+                            <span>$890xkg</span>
+                            <button onclick= "{addProducto(`Peceto`,890,1)}"> Agregar al carrito</button>     
+                        </div> 
+                    </div>
+                    
+                </div>   
+        </section>
+
+
+        <section class="section-carrito" id="carrito">
+            <h2>Carrito</h2>
+            <h3>Productos Seleccionados</h3>
+            <div  id="cartSelect">
+                <div class="mensaje-productos">
+                    No tienes productos seleccionados
+                </div>
+            </div>
+            <div class="total-items">
+                    <span>
+                        <strong>Total: </strong>
+                        <span id="totalProductos"></span>
+                    </span>
+            </div>
+            <button>finalizar compra</button>
+            
+        
+        </section>
+
+        
+
+        <section class="section-contacto" id="contacto">
+            <h2>Contacto</h2>
+            <h3>Informacion</h3>
+
+            <div class="container-contact">
+
+                <div class="datos">
+                    <i class="icon-clock"><b> Horario : </b>Lunes a Sabados de 8:00 a 20:00 / Domingo de 8:00 a 13:00</i>
+                    <i class="icon-mail"><b> Email : </b>Elsalvador@gmail.com</i>
+                    <i class="icon-location"><b> Direccion : </b>Fulano 1905, Valentin Alsina</i>
+                    <i class="icon-phone"><b> Telefono : </b>4228-8224</i>
+                    <i class="icon-whatsapp"><b> Whatsapp : </b>(+54)11-3873-5040</i>
+
+
+                </div>
+
+                <form class="form-data" action="./form-result.php" method="POST" target="Self_">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><label for="name">Nombre : </label></li>
+                        <li><input type="text" name="nomber"></li>
+                    </ul>
+                    <ul>
+                        <li><label for="empresa">Empresa : </label></li>
+                        <li> <input type="text" name="empresa"></li>
+                    </ul>
+                    <ul>
+                        <li><label for="number">Telefono : </label></li>
+                        <li><input type="number" name="numero"></li>
+                    </ul>
+                    <ul>
+                        <li> <label for="email">Email : </label></li>
+                        <li> <input type="email" name="email"></li>
+                    </ul>
+                    <ul>
+                        <li><label for="mensaje">Mensaje : </label></li>
+                        <li><textarea name="mensaje" id="mensaje" cols="30" rows="4"></textarea></li> 
+                    </ul>
+                    
+                    <input type="submit" name="send" class="boton"></>
+                </form>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="redes">
+                <h4>Buscanos en</h4>
+                <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>  
+            </div>
+
+            <div class="logo">
+                <a href="#inicio"><img src="./assets/img/logo.png" alt="Logo"></a>
+            </div>
+            
+            <div class="info">
+                <span>Fulano 1905, Valentin Alsina</span>
+                <span>© Todos los derechos reservador</span>
+            </div>
+
+        </footer>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carrito.js"></script>
+</body>
+</html>
